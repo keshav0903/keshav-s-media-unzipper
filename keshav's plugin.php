@@ -89,7 +89,7 @@ function keshav_upload_media_zips()
 								$attach_data = wp_generate_attachment_metadata( $attach_id, $dir . '/' . $zip->getNameIndex($i ));
 								wp_update_attachment_metadata( $attach_id, $attach_data );							
 							} else {
-								echo $zip->getNameIndex($i) . ' could not be uploaded. Its file type of ' . $filetype['type'] . ' is now allowed.<br/>' ;
+								echo $zip->getNameIndex($i) . ' could not be uploaded. Its file type of ' . $filetype['type'] . ' is not allowed.<br/>' ;
 							}
 							
 						}
